@@ -32,13 +32,13 @@ As this Organization grows portions of this document may be moved to GitHub Page
 
 - [Local Development Setup](#local-development-setup)
 
-  - [Linux or Mac](#linux-or-mac-development-setup)
+  - [Linux or Mac](#linux-development-setup)
   - [Windows](#windows-development-setup)
 
 - [Git Tips](#git-tips)
 
   - [Git Commits](#git-commit-tips)
-  - [Git Branching](#git-branching-tips)
+  - [Git Branching](#git-branch-tips)
 
     - [Orphan](#orphaned-git-branches)
     - [Development](#development-git-branches)
@@ -947,7 +947,7 @@ ___
 ## Pull Requests
 
 
-Issuing Pull Requests to repositories maintained by this Organization will only be considered **if** shared under the same licensing defined under [License](#license) section of this document. Please use any relevant examples from the [`pull_request.md`][branch__current__pull_request] Template and adherer to the Style Guidelines for [Git Commits](git-commit-tips)
+Issuing Pull Requests to repositories maintained by this Organization will only be considered **if** shared under the same licensing defined under [License](#license) section of this document. Please use any relevant examples from the [`pull_request.md`][branch__current__pull_request] Template and adherer to the Style Guidelines for [Git Commits](#git-commit-tips)
 
 
 
