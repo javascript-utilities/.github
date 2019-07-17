@@ -14,14 +14,13 @@ As this Organization grows portions of this document may be moved to GitHub Page
 #### Table of Contents
 
 
-- [Code of Conduct](#code-of-conduct)
+- [:customs: Code of Conduct](#code-of-conduct)
 
 - [How to Contribute](#how-to-contribute)
 
   - [Open Issues](#open-issues)
   - [Report Bugs](#report-bugs)
   - [Suggest Enhancements](#suggest-enhancements)
-  - [Supporting](#supporting)
 
 - [Style Guidelines](#style-guidelines)
 
@@ -47,7 +46,9 @@ As this Organization grows portions of this document may be moved to GitHub Page
 
 - [Pull Requests](#pull-requests)
 
-- [License](#license)
+- [:copyright: License](#license)
+
+- [Attribution](#attribution)
 
 
 ------
@@ -66,7 +67,7 @@ ___
 ## How to Contribute
 
 
-The more eyes on a Code Base the more likely it seems that bugs will be found and fixed; so sharing Repositories maintained by this Organization is an excellent way to contribute if none of the following options are applicable.
+The goal is, as always, useful code and documentation, though <sub>[![Support][badge__support]][relative_link__support]</sub> is always appreciated. Sharing Repositories maintained by this Organization is an excellent way to contribute if none of the following options are applicable, because the more eyes on a Code Base the more likely it seems that bugs will be found and fixed. 
 
 
 ### Open Issues
@@ -144,13 +145,6 @@ git push forked gh-pages
 ```
 
 
-### Supporting
-
-
-**TLDR**
-<sub>[![Liberapay][badge__liberapay]][liberapay_donate]</sub> is one of the few platforms that allow for crowd-funding to be redistributed among Team Members. See the `Supporting` section within the [`readme.md`][branch__current__readme] file of this Repository for more details on this decision, and the _`core_team.md`_ file when available for Share details.
-
-
 ___
 
 
@@ -193,7 +187,7 @@ One does **not** have to use all of the following and this is intended to help k
 - `continue` past non-matches within loops to avoid _over-nesting_ of conditional logic
 
 
-**`assets/javascript_modules/deep-thought/deep-thought.js`**
+**`assets/javascript-modules/deep-thought/deep-thought.js`**
 
 
 ```JavaScript
@@ -311,7 +305,7 @@ class DeepThought {
     <link type="text/css" href="assets/css/main.css" rel="stylesheet"/>
 
 
-    <script type="text/javascript" src="assets/javascript_modules/deep-thought/deep-thought.js"></script>
+    <script type="text/javascript" src="assets/javascript-modules/deep-thought/deep-thought.js"></script>
 
     <script type="text/javascript">
       import DeepThought from 'assets/javascript/deep-thought/deep-thought.js';
@@ -448,6 +442,15 @@ _repo='.github'
 
 git clone git@github.com:${_name}/${_repo}.git
 \```
+
+
+Maybe a table with some columns to organize something...
+
+
+| Column One | Column Two |
+|------------|------------|
+| cell       | cell       |
+| cell       | cell       |
 
 
 ___
@@ -715,22 +718,34 @@ This will not be an in-depth or exhaustive guide on `git` usage, as the preexist
 
 - While not required the following emoji may be used as the first _word_ of commit messages
 
+  - :tada:             `:tada:` for `Initial Commit` of repository, **not** to be used when re-naming files
+  - :memo:             `:memo:` for documentation, new file or content, related commits
   - :art:              `:art:` for format and/or structure related changes
-  - :memo:             `:memo:` for documentation related commits
-  - :fire:             `:fire:` for deletion of files or code
   - :coffee:           `:coffee:` for JavaScript additions and/or changes
-  - :white_check_mark: `:white_check_mark:` for adding tests
+  - :fire:             `:fire:` for deletion of files, code, or documentation
+  - :hankey:           `:hankey:` please avoid needing to use as it's for when moving files or content between branches
+  - :dizzy:            `:dizzy:` when re-naming or moving files within a branch, it'll happen for newer projects but need for use is to be avoided past version **`0.0.5`**
 
-  - :bug:              `:bug:` for _stomping_ bugs
-  - :penguin:          `:penguin:` for fixing or improving Linux performance or compatibility
-  - :apple:            `:apple:` for fixing or improving Apple performance or compatibility
-  - :checkered_flag:   `:checkered_flag:` for fixing or improving Windows performance or compatibility
-  - :green_heart:      `:green_heart:` when fixing Continuous Integration builds
+  - :bug:              `:bug:` for _stomping_ bugs in general
+  - :smoking:          `:smoking:` for resource bug fixes, eg. memory leaks, recursion limits, CPU load
+  - :facepunch:        `:facepunch:` when _blaming_ one's self and new commit is to fix bug from recently past commit
+  - :do_not_litter:    `:do_not_litter:` when _blaming_ another's recent changes for requiring new committed bug fix
   - :lock:             `:lock:` for security related fixes
+
+  - :penguin:          `:penguin:` for fixing or improving Linux performance or compatibility
+  - :apple:            `:apple:` for fixing or improving Apple/Mac performance or compatibility
+  - :checkered_flag:   `:checkered_flag:` for fixing or improving Windows/MS performance or compatibility
 
   - :arrow_up:         `:arrow_up:` for tracking upgraded dependencies
   - :arrow_down:       `:arrow_down:` for tracking downgraded dependencies
   - :bookmark:         `:bookmark:` for Tagging Releases and Request For Comments (RFC)
+
+  - :white_check_mark: `:white_check_mark:` for adding tests
+  - :green_heart:      `:green_heart:` when fixing Continuous Integration builds
+
+  - :stars:            `:stars:` for accepting a Pull Request
+  - :no_entry:         `:no_entry:` for rejecting a Pull Request
+
 
 
 - Additional notes should follow [Markdown Style Guidelines](#markdown-style-guidelines); except for headings as _`#`s_ are considered comments by default and thus ignored by many `commit` message handlers, see following example for other formatting differences
@@ -762,21 +777,23 @@ This Organization encourages the use of _`orphan`_ branches for separating Code 
 **`master`** branch may only contain;
 
 
+- `.git/` directory, required for version tracking and logging changes
+
 - _`readme.md`_ file, used for documenting installation and/or usage
+
 - _`script-name.js`_ file, any dependencies should be listed within the _`.gitmodules`_ file under the **`gh-pages`** branch
+
 - _`lib`_ directory, should **only** be used for files that directly support the _`script-name.js`_ file, otherwise please split out reusable code to separate repositories for including as submodules within the `gh-pages` branch
 
 
 **`gh-pages`** branch may contain;
 
 
-- `index.html` file, when **no** `_config.yml` file is present; used to demonstrate live example of what _`script-name.js`_ file does, when a `_config.yml` file **is** present; used as the _home page_ for the Repository
+- `index.html` file, when **no** `_config.yml` file is present; used to demonstrate live example of what _`script-name.js`_ file does, when a `_config.yml` file **is** present; used as the _home page_ for the Repository documentation and link to the test page(s)
 
-- `assets/javascript_modules/project-name`
+- `assets/javascript-modules/project-name/` directory/submodule path should point to the _`https`_ GitHub Clone URL and contain the **`master`** branch code for `project-name`
 
-- Pointers to any other submodules and any stylesheets required to present a basic example of project features
-
-- Collections of pages and/or posts documenting anything about the Repository that requires more detail
+- `_posts/` or `collection-name/` directories, should contain collections of pages and/or posts documenting anything about the Repository that requires more detail or examples
 
 
 #### Orphaned Git Branches
@@ -816,9 +833,9 @@ New Project that does stuff for things
 **Additions**
 
 
-- `new-script.js`, tests on a browser or two seem error free
-- `README.md`, documentation about `NewClass` from `new-script.js`
-- `LICENSE`, GNU AGPL 3.0 License added to remain consistent with Organization
+- `new-script.js` file, tests on a browser or two seem error free
+- `README.md` file, documentation about `NewClass` from `new-script.js`
+- `LICENSE` file, GNU AGPL 3.0 License added to remain consistent with Organization
 EOF
 
 
@@ -864,12 +881,16 @@ This branch is orphaned to document the `master` branch
 
 
 **Additions**
-- `LICENSE`, GNU AGPL 3.0 License added to remain consistent with Organization
-- `README.md`, documentation on how to setup and test code from `master` branch
-- `index.html`, an example page for live demonstration, debugging of `NewClass`
+
+
+- `LICENSE` file, GNU AGPL 3.0 License added to remain consistent with Organization
+- `README.md` file, documentation on how to setup and test code from `master` branch
+- `index.html` file, live demonstration example page, enables debugging of `NewClass`
 
 
 **Submodules**
+
+
 - `assets/javascript-modules/project-name`, tracked for `NewClass` code
 EOF
 
@@ -878,6 +899,9 @@ git push forked gh-pages
 
 
 #### Development Git Branches
+
+
+Development branches are excellent for privately tracking series of changes for new features or especially pervasive bugs. Merging with a _`squash`_ commit back to one of the _main line_ branches prior to publicly pushing to a fork is encouraged, however, please try to be _targeted_ as to what each committed change pertains to.
 
 
 **Example `dev-master` branch initialization**
@@ -941,6 +965,9 @@ git push forked master
 ```
 
 
+Also be wary of _`rm`_ vs _`git rm`_ and _`mv`_ vs _`git mv`_ commands, when merging from a development branch back to one of the _mainline_ branches the _non-`git`_ wrapped commands will **not** update state between branches, and Pull Requests that confuse version management will be rejected.
+
+
 ___
 
 
@@ -978,6 +1005,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
 
+___
+
+
 ## Attribution
 
 
@@ -988,6 +1018,7 @@ Portions of this document, such as emoji usage, where inspired by [_`contributin
 [relative_link__issues]: issues
 [relative_link__issues_new]: issues/new
 [relative_link__network_members]: network/members
+[relative_link__support]: SUPPORT.md
 
 
 [branch__current__code_of_conduct]: CODE_OF_CONDUCT.md
@@ -1007,7 +1038,6 @@ Portions of this document, such as emoji usage, where inspired by [_`contributin
 
 [badge__issues]: https://img.shields.io/github/issues/javascript-utilities/.github.svg
 [badge__contributors]: https://img.shields.io/github/forks/javascript-utilities/.github.svg?color=005571&label=Contributors
-[badge__liberapay]: https://img.shields.io/badge/Liberapay-gray.svg?logo=liberapay
 
 
-[liberapay_donate]: https://liberapay.com/javascript-utilities/donate
+[badge__support]: https://img.shields.io/badge/&hearts;-Support-lightgray.svg?labelColor=success&color=gray

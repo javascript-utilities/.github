@@ -1,20 +1,23 @@
 ---
 name: Pull Request
-about: Examples of various ways to format Pull Request commits
-title: Pull Request
+about: General format of Pull Request commits
+title: ''
 labels: ''
 assignees: ''
 ---
 
+
+
 Body of this message may include MarkDown formatted content as well as most of the things covered within GitHub's [help][gh_help_formatting_syntax] on related formatting options available.
 
 
-## Examples
+**Feature Progress**
 
-> Check list
 
 - [ ] Feature request #9003 for more cow-bell
+
 - [x] **Fixed** #9004 bug with improper timing
+
 - [x] __Finished__ feature request and closing #9005 for _"Xylophone Solo"_
 
 
