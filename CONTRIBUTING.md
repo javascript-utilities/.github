@@ -1,10 +1,13 @@
-# Contributing to JavaScript Utilities
+# Contributing to Javascript Utilities
+[heading__title]:
+  #contributing-to-javascript-utilities
+  "&#x2B06; Top of this document"
 
 
 Thanks for even thinking about it!
 
 
-As this Organization grows portions of this document may be moved to GitHub Pages; the following are not _set in stone_ rules but guidelines, and much like other files maintained by this Organization the following may be edited via a _`Pull Request`_.
+The text within this document are not _set in stone_ rules but guidelines, and much like other files maintained by Javascript Utilities the following may be edited via a _`Pull Request`_.
 
 
 
@@ -14,75 +17,97 @@ As this Organization grows portions of this document may be moved to GitHub Page
 #### Table of Contents
 
 
-- [:customs: Code of Conduct](#code-of-conduct)
+- [:arrow_up: Top of this document][heading__title]
 
-- [How to Contribute](#how-to-contribute)
+- [:customs: Code of Conduct][heading__code_of_conduct]
 
-  - [Open Issues](#open-issues)
-  - [Report Bugs](#report-bugs)
-  - [Suggest Enhancements](#suggest-enhancements)
+- [How to Contribute][heading__how_to_contribute]
 
-- [Style Guidelines](#style-guidelines)
+  - [Open Issues][heading__open_issues]
+  - [Report Bugs][heading__report_bugs]
+  - [Suggest Enhancements][heading__suggest_enhancements]
 
-  - [JavaScript](#javascript-style-guidelines)
-  - [HTML and CSS](#html-and-css-style-guidelines)
-  - [MarkDown](#markdown-style-guidelines)
-  - [FrontMatter and YAML](#frontmatter-and-yaml-style-guidelines)
+- [Style Guidelines][heading__style_guidelines]
 
-- [Local Development Setup](#local-development-setup)
+  - [:paintbrush: CSS][heading__style_guidelines__css]
+  - [:spider_web: HTML][heading__style_guidelines__html]
+  - [:coffee: JavaScript][heading__style_guidelines__javascript]
+  - [:memo: MarkDown][heading__style_guidelines__markdown]
 
-  - [Linux or Mac](#linux-development-setup)
-  - [Windows](#windows-development-setup)
+- [Local Development Setup][heading__local_development_setup]
 
-- [Git Tips](#git-tips)
+  - [Linux][heading__linux_development_setup]
+  - [Windows][heading__windows_development_setup]
 
-  - [Git Commits](#git-commit-tips)
-  - [Git Branching](#git-branch-tips)
+- [Git Tips][heading__git_tips]
 
-    - [Orphan](#orphaned-git-branches)
-    - [Development](#development-git-branches)
+  - [Commits][heading__git_commit_tips]
+  - [Branching][heading__git_branch_tips]
 
-  - [Git Merging](#git-merge-tips)
+    - [Development][heading__development_git_branches]
+    - [Merging][heading__git_merge_tips]
 
-- [Pull Requests](#pull-requests)
+- [Pull Requests][heading__pull_requests]
 
-- [:copyright: License](#license)
+- [:copyright: License][heading__license]
 
-- [Attribution](#attribution)
+- [Attribution][heading__attribution]
 
 
 ------
 
 
 ## Code of Conduct
+[heading__code_of_conduct]:
+  #code-of-conduct
+  "&#x1F6C3; A teaser pulled from contributor-covenant Code of Conduct"
 
 
-**TLDR**
-This Organization is a semiprofessional public place, _`Treat others as though they have access to your toothbrush`_, and _`Code and Facts should be seasoned with Levity and Tact`_. Review the [full-length version][branch__current__code_of_conduct] if so inclined.
+```
+## Scope
+
+This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an appointed
+representative at an online or offline event. Representation of a project may be
+further defined and clarified by project maintainers.
+
+```
 
 
-___
+Review the [whole thing][branch__current__code_of_conduct] to see what is expected of those that maintain code with Javascript Utilities
+
+
 
 
 ## How to Contribute
+[heading__how_to_contribute]:
+  #how-to-contribute
+  ""
 
 
-The goal is, as always, useful code and documentation, though <sub>[![Support][badge__support]][relative_link__support]</sub> is always appreciated. Sharing Repositories maintained by this Organization is an excellent way to contribute if none of the following options are applicable, because the more eyes on a Code Base the more likely it seems that bugs will be found and fixed. 
+The goal is, as always, useful code and documentation, though <sub>[![Support][badge__support]][branch__current__support]</sub> is always appreciated. Sharing Repositories maintained by this Organization is an excellent way to contribute if none of the following options are applicable, because the more eyes on a Code Base the more likely it seems that bugs will be found and fixed.
 
 
 ### Open Issues
+[heading__open_issues]:
+  #open-issues
+  ""
 
 
-Join the <sub>[![Contributors][badge__contributors]][relative_link__network_members]</sub> issuing Pull Requests that close available <sub>[![Open Issues][badge__issues]][relative_link__issues]</sub>. [New Issues][relative_link__issues_new] may be opened for Reporting Bugs and Suggesting Enhancements. General tips on formatting [MarkDown](#markdown-style-guidelines) guidelines from this document are advisable to follow. However, please search for existing similar Issues first; example search for [`memory-leaks`](https://github.com/javascript-utilities/browser-storage/search?q=memory-leaks&type=Issues) from the `browser-storage` repository.
-
+Join the <sub>[![Contributors][badge__contributors]][branch__current__network_members]</sub> issuing Pull Requests that close available <sub>[![Open Issues][badge__issues]][branch__current__issues]</sub>. [New Issues][branch__current__issues_new] may be opened for Reporting Bugs and Suggesting Enhancements. However, please search for existing similar Issues first; example search for [`memory-leaks`](https://github.com/javascript-utilities/.github/search?q=memory-leaks&type=Issues) from the `.github` repository.
 
 ### Report Bugs
+[heading__report_bugs]:
+  #report-bugs
+  ""
 
 
-Use the [`bug_report.md`][branch__current__bug_report] Template by selecting _`Bug report`_ from the GitHub web interface when opening a [New Issue][relative_link__issues_new]. Please be detailed and try to include all relevant information within the OP (Original Post). Additionally, if clarifications or more information is requested or discovered, then editing the OP is preferred to adding another post or opening a new issue.
+The [`bug_report.md`][branch__current__bug_report] Template should when opening a [New Issue][branch__current__issues_new]. Please be detailed and try to include all relevant information within the OP (Original Post). Additionally, if clarifications or more information is requested or discovered, then editing the OP is preferred to adding another post or opening a new issue.
 
 
-Bugs may also be reported via a Pull Request that purposes fixes, in which case skip opening an Issue and instead use the `:bug:` emoji as the first _word_ of the fix commit.
+Bugs may also be reported via a Pull Request that suggests fixes, in which case skip opening an Issue and instead use the `:bug:` emoji_word as the first _word_ of the fix commit.
 
 
 **Example Bug Report Pull Request**
@@ -94,12 +119,16 @@ git merge --strategy-option theirs --squash dev-master
 
 
 git commit -F- <<'EOF'
-:bug: memory leak `cow_bell(solo_count_down)` when `solo_count_down=NaN`
+:bug: memory leak `cow_bell(solo_count_down)` when `solo_count_down=<NaN>`
 
 
 
 **Fixes**
-`new-script.js` file, `NaN` passed to `cow_bell(solo_count_down)` no longer causes memory leaks
+
+
+- `new-script.sh` file, fixes `cow_bell(solo_count_down)` being called before previous solo has ended
+
+- `README.md` file, removes warnings about excessive cow_bell solos causing memory leaks
 EOF
 
 
@@ -108,12 +137,15 @@ git push forked master
 
 
 ### Suggest Enhancements
+[heading__suggest_enhancements]:
+  #suggest-enhancements
+  ""
 
 
-Use the [`feature_request.md`][branch__current__feature_request] Template by selecting _`Feature request`_ from the GitHub web interface when opening a [New Issue][relative_link__issues_new]. Whenever possible provide example/pseudo code along with a detailed description of what needs solved. Or in other-words; napkin-sketches are permitted if it gets helps readers better understand the scope.
+The [`feature_request.md`][branch__current__feature_request] Template may be used when opening a [New Issue][branch__current__issues_new]. Whenever possible provide example/pseudo code along with a detailed description of what needs solved. Or in other-words; napkin-sketches are permitted if it helps readers better understand the scope.
 
 
-Adding new features can also be done via a Pull Request
+Or for faster consideration and adoption of new code, try adding new features via a Pull Request
 
 
 **Example Enhancement Pull Request**
@@ -132,26 +164,28 @@ git commit -F- <<'EOF'
 **Additions**
 
 
-`new-script.js` file;
+`new-script.sh` file;
 
 
-- `constructor()` method now preforms feature detection for Mac OS
+- feature detection for Mac OS, uses default media player for solos
 
-- `solo()` method inspects `ClassName.is_mac` on caught _unsupported_ errors
+- feature detection for MS, however requires Bash sub-system to be installed
 EOF
 
 
 git push forked gh-pages
 ```
 
-
 ___
 
 
 ## Style Guidelines
+[heading__style_guidelines]:
+  #style-guidelines
+  ""
 
 
-One does **not** have to use all of the following and this is intended to help keep things consistent between all repositories maintained by this Organization. Or in other-words, no-one will _should_ get offended if a new line is forgotten or similar, but please do **not** break anything when issuing Pull Requests.
+No-one _should_ get offended if a new line is forgotten or similar, but please do **not** break anything when issuing Pull Requests.
 
 
 - Code that operates as intended is as important as documentation that is comprehensible, so do **not** sacrifice readability for anything
@@ -160,91 +194,28 @@ One does **not** have to use all of the following and this is intended to help k
 
 - URLs may _break_ column width limits
 
-- Tabs shall be a sequence of two spaces (**`  `**)
+- Tabs shall be a sequence of four spaces (**`    `**), generally no literal tabs (`\t`) will be permitted within code or documentation
 
 - Project, File, and Directory names _should_ be lowercase, with hyphens (**`-`**) in place of spaces (**` `**) except where GitHub requires otherwise
 
 - Documentation should be no more than `1024` lines per file
 
-- Code specific (`.js`) files should aim for less than `512` lines of actionable code, and _doc-strings_/comments should not exceed `20%` of total lines within such files
+- Code specific (`.sh`) files should aim for less than `512` lines of actionable code, and _doc-strings_/comments should not exceed `20%` of total lines within such files
 
-- _Unix-ish_ new-lines (**`\n`**) are to be used within all files, and aside from very few exceptions any Pull Request using other line-breaks will be rejected until corrected
-
-
-### JavaScript Style Guidelines
+- _Unix-ish_ new-lines (**`\n`**) are to be used within all files, Pull Request using other line-breaks will be rejected until corrected
 
 
-- Lines should not exceed `120` columns wide for code and no more than `80` columns wide for comment blocks
-
-- Comments in most cases should precede code and be formated for digestion by [JSDoc][jsdoc__block_tags] or similar tools
-
-- Use `var` sparingly, and `const`/`let` variable assignments where necessary
-
-- Return _something_ from Methods or Functions even if that is a boolean status of some object mutation
-
-- `throw` and `except` errors! Preferably of specific types or of a descriptive nature
-
-- `continue` past non-matches within loops to avoid _over-nesting_ of conditional logic
+### CSS Style Guidelines
+[heading__style_guidelines__css]:
+  #css-style-guidelines
+  "&#x1F58C; Style Guidelines for CSS"
 
 
-**`assets/javascript-modules/deep-thought/deep-thought.js`**
-
-
-```JavaScript
-class DeepThought {
-  /**
-   * Does some classy things with numerical objects
-   * @copyright S0AndS0 2019 GNU AGPL version 3
-   * @param {string} operation - Mathematical operation to perform
-   * @this DeepThought
-   */
-  constructor(operation) {
-    this.valid_operations = ['multiply', 'divide', 'subtract', 'sum', 'add'];
-    if (this.valid_operations.indexOf(operation) == -1) {
-      throw new Error('Valid Operations are -> ' + this.valid_operations);
-    }
-    this.operation = operation;
-  }
-
-  /**
-   * @param {number} life         - First number to apply `this.operation` to
-   * @param {number} the_universe - Second number to apply `this.operation` to
-   * @returns {?number}
-   * @this DeepThought
-   */
-  calculate_meaning(life, the_universe) {
-    let results_of_everything = NaN;
-    switch (this.operation) {
-      case 'multiply':
-        results_of_everything = life * the_universe;
-        break;
-      case 'divide':
-        results_of_everything = life / the_universe;
-        break;
-      case 'subtract':
-        results_of_everything = life - the_universe;
-        break;
-      default:
-      results_of_everything = life + the_universe;
-    }
-    return results_of_everything;
-  }
-}
-```
-
-
-### HTML and CSS Style Guidelines
-
-
-- Try to be concise because Organizations such as [Liquid Utilities][github__liquid_utilities] and [SCSS Utilities][github__scss_utilities] should be contributed to for compiling HTML and CSS from complex data structures and/or building Templates
+- Try to be concise because Organizations such as [Liquid Utilities][liquid_utilities] and [SCSS Utilities][scss_utilities] should be contributed to for compiling HTML and CSS from complex data structures and/or building Templates
 
 - Lines should not exceed `120` columns wide whenever possible
 
 - Use _`BEM`_ or similarly descriptive formatting for class names
-
-- Use HTML5 tags that are well supported and pre HTML5 tags anywhere else
-
-- Only in-line `<style>` and/or `<script>` tags for quick examples, otherwise split things into separate Labeled Code Blocks and include relative `src="script.js"` or `href="style.css"` Attributes
 
 
 **`assets/css/main.css`**
@@ -285,6 +256,17 @@ class DeepThought {
   text-align: right;
 }
 ```
+
+
+### HTML Style Guidelines
+[heading__style_guidelines__html]:
+  #html-style-guidelines
+  "&#x1F578; Style Guidelines for HTML"
+
+
+- Use HTML5 tags that are well supported and pre HTML5 tags anywhere else
+
+- In-line `<style></style>` and/or `<script></script>` tags for **quick** examples, otherwise split things into separate Labeled Code Blocks and include relative `src="script.js"` or `href="style.css"` attributes
 
 
 **`index.html`**
@@ -359,12 +341,80 @@ class DeepThought {
 ```
 
 
+### JavaScript Style Guidelines
+[heading__style_guidelines__javascript]:
+  #javascript-style-guidelines
+  "&#x2615; Style Guidelines for JavaScript"
+
+
+- Lines should not exceed `120` columns wide for code and no more than `80` columns wide for comment blocks
+
+- Comments in most cases should precede code and be formated for digestion by [JSDoc][jsdoc__block_tags] or similar tools
+
+- Use `var` sparingly, and `const`/`let` variable assignments where necessary
+
+- Return _something_ from Methods or Functions even if that is a boolean status of some object mutation
+
+- `throw` and `except` errors! Preferably of specific types or of a descriptive nature
+
+- `continue` past non-matches within loops to avoid _over-nesting_ of conditional logic
+
+
+**`assets/javascript-modules/deep-thought/deep-thought.js`**
+
+
+```JavaScript
+class DeepThought {
+  /**
+   * Does some classy things with numerical objects
+   * @copyright S0AndS0 2019 GNU AGPL version 3
+   * @param {string} operation - Mathematical operation to perform
+   * @this DeepThought
+   */
+  constructor(operation) {
+    this.valid_operations = ['multiply', 'divide', 'subtract', 'sum', 'add'];
+    if (this.valid_operations.indexOf(operation) == -1) {
+      throw new Error('Valid Operations are -> ' + this.valid_operations);
+    }
+    this.operation = operation;
+  }
+
+  /**
+   * @param {number} life         - First number to apply `this.operation` to
+   * @param {number} the_universe - Second number to apply `this.operation` to
+   * @returns {?number}
+   * @this DeepThought
+   */
+  calculate_meaning(life, the_universe) {
+    let results_of_everything = NaN;
+    switch (this.operation) {
+      case 'multiply':
+        results_of_everything = life * the_universe;
+        break;
+      case 'divide':
+        results_of_everything = life / the_universe;
+        break;
+      case 'subtract':
+        results_of_everything = life - the_universe;
+        break;
+      default:
+      results_of_everything = life + the_universe;
+    }
+    return results_of_everything;
+  }
+}
+```
+
+
 ### MarkDown Style Guidelines
+[heading__style_guidelines__markdown]:
+  #markdown-style-guidelines
+  "&#x1F4DD; Style Guidelines for MarkDown"
 
 
 - There is no set column width limits for MarkDown files, but do not get carried away because the focus should be on getting readers _up to speed_
 
-- External links are permitted but try to keep it to a minimum and instead refer to built-in `man` and/or `help` document wherever possible
+- External links are permitted but try to keep it to a minimum; instead refer to built-in `man` and/or `help` documentation wherever possible
 
 - Relative links to other files or locations within documentation is preferred; except for _cross-branch_ linking in which case absolute links are preferred
 
@@ -378,11 +428,12 @@ class DeepThought {
 
 - Provide a _`Table of Contents`_ section when headings become numerous and use three underscores (**`___`**) as Dividers between main sections
 
+  - Each heading should have an internal MarkDown _tag_, see following example, used for linking within the document
   - Only one _level one_ heading (lines prefixed with a single **`#`** one hash-sign) may be included in a MarkDown document and only when no _`FrontMatter`_ defines a **`title:`** property
   - Main Sections should have a _level two_ heading (prefixed by **`##`** two hash-signs)
   - Sub-Sections should have a _level three_ heading, and nesting beyond this is discouraged
 
-- Code Blocks should have the related language defined as proper nouns, eg. `JavaScript` not `javascript` and `Bash` not `bash`
+- Code Blocks should have the related language defined as proper nouns, eg. `Bash` not `bash`
 
   - Formatting within code blocks should follow related guidelines for that language
   - Code blocks should not exceed **`120`** lines in length
@@ -417,20 +468,23 @@ Short description about content of document, project, and/or code
 #### Table of Contents
 
 
-- [First](#first-section)
+- [First][heading__first_section]
 
-- [Second](#second-section)
+- [Second][heading__second_section]
 
-  - [JavaScript Time](#javascript-time)
-  - [JavaScript Variables](#javascript-variables)
+  - [Bash Time][heading__bash_time]
+  - [Bash Variables][heading__bash_variables]
 
-- [End](#end-section)
+- [End][heading__end_section]
 
 
 ------
 
 
 ## First Section
+[heading__first_section]:
+  #first-section
+  "Link hover-text for first section"
 
 
 A thing or two about `git`...
@@ -457,43 +511,48 @@ ___
 
 
 ## Second Section
+[heading__second_section]:
+  #second-section
+  "Link hover-text for second section"
 
 
-Something notes about _`JavaScript`_
+Some notes about _`Bash`_
 
 
-### JavaScript Time
+### Bash Time
+[heading__bash_time]:
+  #bash-time
+  "Link hover-text for Bash time"
 
 
-**[`AnotherFile.js`][branch__current__another_file]**
+**[`time-stamp-date.sh`][branch__current__another_file]**
 
 
-\```JavaScript
-const today = new Date();
-
-console.log('today -> ' + today);
+\```Bash
+time_stamp_date() {
+  local _date="${1:-$(date)}"
+  printf '%s\n' "$(date --date="${_date}" +'%Y%m%d')"
+}
 \```
 
 
-### JavaScript Variables
+### Bash Variables
+[heading__bash_variables]:
+  #bash-variables
+  "Link hover-text for Bash variables"
 
 
 Interactive console examples...
 
-\```JavaScript
-const once_set = 'Unforgeable';
-let set_this_time = 1;
-var otherwise = false;
-\```
+\```Bash
+_now_time_stamp="$(time_stamp_date)"
+printf '%s\n' "${_now_time_stamp}"
+#> 20191125
 
 
-... inspect behavior of re-setting or overwriting things...
-
-
-\```JavaScript
-otherwise = true;
-set_this_time = 255;
-once_set = 'Remember';
+_past_time_stamp="$(time_stamp_date 'July 01, 1970')"
+printf '%s\n' "${_past_time_stamp}"
+#> 19700701
 \```
 
 
@@ -501,6 +560,9 @@ ___
 
 
 ## End Section
+[heading__end_section]:
+  #end-section
+  "Link hover-text for end section"
 
 
 In summation this is the general outline of MarkDown formatting.
@@ -513,10 +575,10 @@ See [Somewhere Else][example__somewhere_else] for more details on something else
 
 
 
-[branch__current__another_file]: AnotherFile.js
+[branch__current__another_file]: time-stamp-date.sh
 
 
-[branch__gh_pages]: ../tree/gh-pages
+[branch__gh_pages]: https://github.com/bash-utilizes/project-name/tree/gh-pages
 
 
 [example__somewhere_else]: https://example.com/somewhere-else.html
@@ -526,54 +588,23 @@ See [Somewhere Else][example__somewhere_else] for more details on something else
 > Note, any prefixed back-slashes (`\` ) should be removed from above example
 
 
-### FrontMatter and YAML Style Guidelines
-
-
-- Try to keep custom properties to a minimum; [Liquid Utilities][github__liquid_utilities] may be a better Organization to contribute to for more complexity
-
-- Avoid building complex data structures with FrontMatter or YAML, again [Liquid Utilities][github__liquid_utilities] may be a better Organization to contribute to for such things
-
-
-**`_data/default-frontmatter.yml`**
-
-
-```YAML
-author: S0AndS0
-description: Where JavaScript is utilized
-title: JavaScript Utilities
-```
-
-
-**`_posts/2019-06-30-welcome.md`**
-
-
-```FrontMatter
----
-title: Welcome to JavaScript Utilities
-description: A post for welcoming readers
-date: 2019-06-30 13:42:11 -0700
----
-
-
-
-Dedicated to utilizing JavaScript on static web hosts such as GitHub Pages.
-
-
-Currently under construction, but do check back often for future developments.
-```
-
 
 ___
 
 
 ## Local Development Setup
+[heading__local_development_setup]:
+  #local-development-setup
+  ""
 
 
-For repositories that do **not** include a `_config.yml` file within a `gh-pages` branch, then Python version 3 is an easy way most systems to preform local testing and development. For repositories that **do** contain a `_config.yml` file then Jekyll is required instead, see the [Jekyll Admin](https://github.com/S0AndS0/Jekyll_Admin) for setup and automation scripts built to make such setup tasks a little swifter.
+For repositories that include a `_config.yml` file within a `gh-pages` branch then Jekyll is required for building documentation, see the [Jekyll Admin][jekyll_admin] for setup and automation scripts built to make setup tasks a little swifter. Otherwise most projects of this Organization only require a Bash shell that is reasonably up-to date.
 
 
 ### Linux Development Setup
-
+[heading__linux_development_setup]:
+  #linux-development-setup
+  ""
 
 > The following steps and variable usage may also work on Mac, and may be Windows **if** a Bash shell is available.
 
@@ -587,9 +618,10 @@ _organization='javascript-utilities'
 _repository='project-name'
 
 
-_https_url="https://github.com/${_organization}/${_repository}.git"
-_git_url="git@github.com:${_organization}/${_repository}.git"
-_fork_url="git@github.com:${_git_name}/${_repository}.git"
+_https_origin_url="https://github.com/${_organization}/${_repository}.git"
+_git_origin_url="git@github.com:${_organization}/${_repository}.git"
+_https_fork_url="https://github.com/${_git_name}/${_repository}.git"
+_git_fork_url="git@github.com:${_git_name}/${_repository}.git"
 ```
 
 
@@ -599,7 +631,13 @@ _fork_url="git@github.com:${_git_name}/${_repository}.git"
 Setup remotes via one of the following;
 
 
-1. Clone fork and setup remotes
+1. Make a directory path for Git sources and change directories
+
+2. Clone fork, checkout `gh-pages` or `example` branch, and setup origin tracking
+
+3. Setup tracking of fork HTTPS URL tracking from perspective of project root
+
+4. Setup tracking of fork Git URL tracking from perspective of submodule root
 
 
 ```bash
@@ -607,84 +645,33 @@ mkdir -vp "${HOME}/github/${_git_name}"
 cd "${HOME}/github/${_git_name}"
 
 
-git clone --origin forked "${_fork_url}"
-
-
+git clone --origin forked "${_git_fork_url}"
 cd "${_repository}"
-git remote add github "${_git_url}"
+git checkout gh-pages
+git remote add origin "${_git_origin_url}"
+
+
+git config --file=.gitmodules submodule.browser-storage.url "${_https_fork_url}"
+git submodule sync
+git submodule update --init --recursive --remote
+
+
+cd "modules/${_repository}"
+git remote add forked "${_git_fork_url}"
+git fetch forked
+git branch --set-upstream-to=forked/master
 ```
 
 
-2. Point existing clone to fork
-
-
-```Bash
-cd "${HOME}/github/${_organization}/${_repository}"
-git remote add forked "${_fork_url}"
-
-git remote rename origin github
-```
-
-
-In either case _`git push forked master`_ _should_ push to the forked repository URL, and _`git fetch github master`_ will download any updates from this Organization. If any updates where downloaded then be sure to merge them before issuing a Pull Request.
-
-
-If Python version `3` or greater is available then a script like _`serve_pwd_to_locahost.sh`_ may be used to serve some of the example web files, where available...
-
-
-```bash
-#!/usr/bin/env bash
-
-
-__git_project_owner__="${1:-javascript-utilities}"
-__git_project_name__="${2:-browser-storage}"
-
-
-cd "${HOME}/github/${__git_project_owner__}/${__git_project_name__}" || exit 1
-python3 -m http.server --bind 127.0.0.1 8080
-```
-
-
-... which could be run via...
-
-
-```bash
-bash serve_pwd_to_locahost.sh
-```
-
-
-... and point a web browser at `http://localhost:8080`
+_`git push forked master`_ _should_ push to the forked repository URL, and _`git fetch origin master`_ will download any updates from this Organization. If any updates where downloaded then be sure to merge before issuing a Pull Request.
 
 
 ### Windows Development Setup
+[heading__windows_development_setup]:
+  #windows-development-setup
+  ""
 
-
-An untested but likely functional `Batch` script version of `serve_pwd_to_locahost.sh` might look like...
-
-
-**`serve_pwd_to_locahost.bat`**
-
-
-```Batch
-@ehco off
-
-
-set __git_project_owner__='javascript-utilities'
-set __git_project_name__='browser-storage'
-
-
-cd /D %UserProfile%\github\%__git_project_owner__\%__git_project_name__ || exit /b
-python3 -m http.server --bind 127.0.0.1 8080
-
-
-pause
-```
-
-
-... of course Pull Requests are welcomed for correcting anything that might be erroneous.
-
-
-> Note, for references to shared variables within following sections perhaps use something like...
+**Batch Variables**
 
 
 ```Batch
@@ -692,36 +679,72 @@ set _git_name='your-name'
 set _organization='javascript-utilities'
 set _repository='project-name'
 
-set _https_url="https://github.com/%_organization/%_repository.git"
-set _git_url="git@github.com:%_organization/%_repository.git"
-set _fork_url="git@github.com:%_git_name/%_repository.git"
+set _https_origin_url="https://github.com/%_organization/%_repository.git"
+set _git_origin_url="git@github.com:%_organization/%_repository.git"
+set _https_fork_url="https://github.com/${_git_name}/${_repository}.git"
+set _git_fork_url="git@github.com:%_git_name/%_repository.git"
 ```
+
+**Batch Git Commands**
+
+
+```Batch
+setlocal enableextensions enabledelayedexpansion
+
+
+md %HOMEDRIVE%%HOMEPATH%\github\%_git_name
+cd %HOMEDRIVE%%HOMEPATH%\github\%_git_name
+
+
+git clone --origin forked %_git_fork_url
+cd %_repository
+git checkout gh-pages
+git remote add origin %_git_origin_url
+
+
+git config --file=.gitmodules submodule.browser-storage.url %_https_fork_url
+git submodule sync
+git submodule update --init --recursive --remote
+
+cd modules\%_repository
+git remote add forked %_git_fork_url
+git fetch forked
+git branch --set-upstream-to=forked/master
+
+```
+
+> Pull Requests are most welcome for correcting anything that might be erroneous.
 
 ___
 
 
 ## Git Tips
+[heading__git_tips]:
+  #git-tips
+  ""
 
 
 This will not be an in-depth or exhaustive guide on `git` usage, as the preexisting documentation available via commands such as _`git help`_ and _`git help submodule`_ are thorough.
 
 
-> Note, see the _`Shared Variables`_ portion within the [Linux Development Setup](#linux-development-setup) section within this document for example values.
-
-
 ### Git Commit Tips
+[heading__git_commit_tips]:
+  #git-commit-tips
+  ""
 
 
 - First line should not exceed `74` columns wide and punctuation such as apostrophes, quotes, and periods (`"'."`) should be avoided
 
 - First line should be separated from message content by three blank lines
 
-- While not required the following emoji may be used as the first _word_ of commit messages
+- While not required the following emoji_word may be used as the first _word_ of commit messages
 
   - :tada:             `:tada:` for `Initial Commit` of repository, **not** to be used when re-naming files
-  - :memo:             `:memo:` for documentation, new file or content, related commits
   - :art:              `:art:` for format and/or structure related changes
-  - :coffee:           `:coffee:` for JavaScript additions and/or changes
+  - :paintbrush: `:paintbrush:` for changes to CSS files.
+  - :spider_web: `:spider_web:` for changes to HTML files.
+  - :coffee: `:coffee:` for changes to JavaScript files.
+  - :memo: `:memo:` for changes to MarkDown files.
   - :fire:             `:fire:` for deletion of files, code, or documentation
   - :hankey:           `:hankey:` please avoid needing to use as it's for when moving files or content between branches
   - :dizzy:            `:dizzy:` when re-naming or moving files within a branch, it'll happen for newer projects but need for use is to be avoided past version **`0.0.5`**
@@ -743,18 +766,18 @@ This will not be an in-depth or exhaustive guide on `git` usage, as the preexist
   - :white_check_mark: `:white_check_mark:` for adding tests
   - :green_heart:      `:green_heart:` when fixing Continuous Integration builds
 
+  - :ship:             `:ship:` when opening a Pull Request
   - :stars:            `:stars:` for accepting a Pull Request
   - :no_entry:         `:no_entry:` for rejecting a Pull Request
 
 
-
-- Additional notes should follow [Markdown Style Guidelines](#markdown-style-guidelines); except for headings as _`#`s_ are considered comments by default and thus ignored by many `commit` message handlers, see following example for other formatting differences
+Additional notes should follow [Markdown Style Guidelines][heading__style_guidelines__markdown]; except for headings as _`#`s_ are considered comments by default and thus ignored by many `commit` message handlers, see following example for other formatting differences
 
 
 ```Bash
 git add README.md
 git commit -F- <<'EOF'
-:memo: Added more content to readme file and spell-checked documentation
+:memo: Adds more readme content and spelling corrections
 
 
 
@@ -769,136 +792,50 @@ EOF
 
 
 ### Git Branch Tips
+[heading__git_branch_tips]:
+  #git-branch-tips
+  ""
 
 
-This Organization encourages the use of _`orphan`_ branches for separating Code to be included in other projects from Documentation and Usage Examples. Non-orphaned development branches are encouraged when adding features or fixing bugs.
+There may be _`orphan`_ branches utilized by javascript-utilities for separating Code to be included in other projects from Documentation and Usage Examples. Non-orphaned development branches are encouraged when adding features or fixing bugs.
 
 
-**`master`** branch may only contain;
+**`master`** branch generally contain;
 
+
+- _`lib`_ or _`shared-functions`_ directory, should **only** be used for files that directly support the _`script-name.sh`_ file, otherwise please split out reusable code to separate repositories for including as submodules within the `gh-pages` branch
 
 - `.git/` directory, required for version tracking and logging changes
 
-- _`readme.md`_ file, used for documenting installation and/or usage
+- _`.github/README.md`_ file, should be a _quick start_ documenting installation and/or usage
 
-- _`script-name.js`_ file, any dependencies should be listed within the _`.gitmodules`_ file under the **`gh-pages`** branch
-
-- _`lib`_ directory, should **only** be used for files that directly support the _`script-name.js`_ file, otherwise please split out reusable code to separate repositories for including as submodules within the `gh-pages` branch
+- _`script-name.sh`_ file, any dependencies should be listed within the _`.gitmodules`_ file under the **`gh-pages`** branch
 
 
-**`gh-pages`** branch may contain;
+**`gh-pages`** branch (sometimes `example` branch) may contain;
 
 
-- `index.html` file, when **no** `_config.yml` file is present; used to demonstrate live example of what _`script-name.js`_ file does, when a `_config.yml` file **is** present; used as the _home page_ for the Repository documentation and link to the test page(s)
+- `modules` directory, that contains a submodule subdirectory tracking the `master` branch, eg. `modules/trap-failure`
 
-- `assets/javascript-modules/project-name/` directory/submodule path should point to the _`https`_ GitHub Clone URL and contain the **`master`** branch code for `project-name`
+- `.gitmodules` file, used by Git to version track submodules
 
-- `_posts/` or `collection-name/` directories, should contain collections of pages and/or posts documenting anything about the Repository that requires more detail or examples
+- `.travis.yml` file, used by Travis CI for public automated tests of code
 
+- `.github/README.md` file, should be a _quick start_ on development setup for fixing bugs or adding features via Pull Requests
 
-#### Orphaned Git Branches
-
-
-The following code blocks demonstrate how new projects are authored and how specific branches are _orphaned_...
+- `example_usage.sh` file, should demonstrate how code from the `master` branch is intended to be used
 
 
-**Example `master` branch initialization**
+All branches should contain a `LICENSE` file, each file should make reference to the license in use, and Pull Requests may be opened only if shared under the same license for a given file and/or repository.
 
 
-```Bash
-## Setup a new git repository
-mkdir -vp "${HOME}/github/${_organization}"
-cd "${HOME}/github/${_organization}"
-
-git init "${_repository}"
-cd "${_repository}"
-
-
-## Add the following files...
-# new-script.js
-# README.md
-# LICENSE
-## ... then track with git
-git add new-script.js README.md LICENSE
-
-
-git commit -F- <<'EOF'
-Initial Commit
-
-
-
-New Project that does stuff for things
-
-
-**Additions**
-
-
-- `new-script.js` file, tests on a browser or two seem error free
-- `README.md` file, documentation about `NewClass` from `new-script.js`
-- `LICENSE` file, GNU AGPL 3.0 License added to remain consistent with Organization
-EOF
-
-
-## Add remote URL and push `master` branch to forked remote
-git remote add 'github' "${_git_url}"
-git push forked master
-```
-
-
-**Example `gh-pages` branch initialization**
-
-
-```Bash
-cd "${HOME}/github/${_organization}/new-project"
-
-
-## Orphan and remove tracking of `master` branch Code and Documentation files
-git checkout --orphan gh-pages
-git rm --cached new-script.js
-git rm --cached README.md
-
-
-## Add HTTP URL pointing to `master` branch as a submodule
-_submodule_destination="assets/javascript-modules/${_repository}"
-
-git submodule add -b master "${_https_url}" "${_submodule_destination}"
-git submodule update --init --recursive
-
-
-## Write an example `index.html` file, and edit the `README.md` file
-git add index.html
-git add README.md
-git add LICENSE
-
-
-## Commit orphaned branch and push to GitHub
-git commit -F- <<'EOF'
-Initial Commit
-
-
-
-This branch is orphaned to document the `master` branch
-
-
-**Additions**
-
-
-- `LICENSE` file, GNU AGPL 3.0 License added to remain consistent with Organization
-- `README.md` file, documentation on how to setup and test code from `master` branch
-- `index.html` file, live demonstration example page, enables debugging of `NewClass`
-
-
-**Submodules**
-
-
-- `assets/javascript-modules/project-name`, tracked for `NewClass` code
-EOF
-
-git push forked gh-pages
-```
+Depending upon language(s) utilized by a given repository the above file structure may change slightly, however, each branch should be kept _spartan_!
 
 
 #### Development Git Branches
+[heading__development_git_branches]:
+  #development-git-branches
+  ""
 
 
 Development branches are excellent for privately tracking series of changes for new features or especially pervasive bugs. Merging with a _`squash`_ commit back to one of the _main line_ branches prior to publicly pushing to a fork is encouraged, however, please try to be _targeted_ as to what each committed change pertains to.
@@ -924,12 +861,12 @@ git checkout master
 git merge --strategy-option theirs --squash dev-master
 
 git commit -F- <<'EOF'
-:bug: Chrome and Mozilla treat DOM triggered JavaScript differently
+:bug: Fixes volume not being set to _`11`_ for solos
 
 
 
 **Edits**
-Chrome does not like JavaScript triggering JavaScript via DOM; must force UI syncing within `syncUI()`
+`cow_bell.sh` file, sets volume to max when `cow_bell()` solo starts
 EOF
 
 
@@ -937,7 +874,10 @@ git push forked master
 ```
 
 
-### Git Merge Tips
+#### Git Merge Tips
+[heading__git_merge_tips]:
+  #git-merge-tips
+  ""
 
 
 **Never** `git merge master` from the `gh-pages` branch, and definitely do **not** `git merge gh-pages` when the `master` branch is checked out; orphaned branches should only be merged to and from their respective development (**_`dev-`_**) prefixed branches.
@@ -952,7 +892,7 @@ git merge --strategy-option theirs --squash dev-master
 
 
 git commit -F- <<'EOF'
-:coffee: Asking permission from checkboxes before modifying state
+:shell: Asking permission from checkboxes before modifying state
 
 
 
@@ -972,6 +912,9 @@ ___
 
 
 ## Pull Requests
+[heading__pull_requests]:
+  #pull-requests
+  ""
 
 
 Issuing Pull Requests to repositories maintained by this Organization will only be considered **if** shared under the same licensing defined under [License](#license) section of this document. Please use any relevant examples from the [`pull_request.md`][branch__current__pull_request] Template and adherer to the Style Guidelines for [Git Commits](#git-commit-tips)
@@ -982,18 +925,18 @@ ___
 
 
 ## License
-
-
-By default all Code (including Documentation) are shared under version three (**`3`**) of the GNU AGPL license.
+[heading__license]:
+  #license
+  "&#x2696; Legal side of Open Source"
 
 
 ```
-Contributing Guidelines for JavaScript Utilities
-Copyright (C) 2019  S0AndS0
+Dedicated to building JavaScript tools for static web sites, such as those hosted by GitHub Pages.
+Copyright (C) <year> S0AndS0
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
-by the Free Software Foundation; version 3 of the License.
+by the Free Software Foundation, version 3 of the License.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -1002,42 +945,93 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 ```
+
+
+For further details review full length version of [AGPL-3.0][branch__current__license] License.
 
 
 ___
 
 
 ## Attribution
+[heading__attribution]:
+  #attribution
+  ""
 
 
-Portions of this document, such as emoji usage, where inspired by [_`contributing.md`_][github__atom__contributing] guidelines from the Atom IDE development team.
+Portions of this document, such as emoji_word usage, where inspired by [_`contributing.md`_][atom__contributing] guidelines from the Atom IDE development team.
+
+Templating of this and other documents within the repository where compiled with [Mustache][mustache_js] _powers_
 
 
 
-[relative_link__issues]: issues
-[relative_link__issues_new]: issues/new
-[relative_link__network_members]: network/members
-[relative_link__support]: SUPPORT.md
+[branch__current__issues]:
+  issues
+  "Please search for existing issues that may be added to or closed"
+
+[branch__current__issues_new]:
+  issues/new
+  "Select the appropriate template when available"
+
+[branch__current__network_members]:
+  network/members
+  "Perhaps you too may be counted amount those that have Forked repositories maintain by Javascript Utilities"
+
+[branch__current__support]:
+  SUPPORT.md
+  "Best avenues for seeking support of Javascript Utilities"
 
 
-[branch__current__code_of_conduct]: CODE_OF_CONDUCT.md
-[branch__current__bug_report]: ISSUE_TEMPLATE/bug_report.md
-[branch__current__feature_request]: ISSUE_TEMPLATE/feature_request.md
-[branch__current__pull_request]: PULL_REQUEST_TEMPLATE/pull_request_template.md
-[branch__current__readme]: README.md
+[branch__current__code_of_conduct]:
+  CODE_OF_CONDUCT.md
+  "Please do **not** encourage new guidelines to be added"
 
-[github__liquid_utilities]: https://github.com/liquid-utilities
-[github__scss_utilities]: https://github.com/scss-utilities
+[branch__current__bug_report]:
+  ISSUE_TEMPLATE/bug_report.md
+  "Create a report to help us improve"
 
-[github__atom__contributing]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
+[branch__current__feature_request]:
+  ISSUE_TEMPLATE/feature_request.md
+  "Suggest an idea for this project"
+
+[branch__current__pull_request]:
+  pull_request_template.md
+  "Template for general Pull Request"
+
+[branch__current__pull_request__bug_fix]:
+  PULL_REQUEST_TEMPLATE/bug_fix.md
+  "Template for Pull Request that fixes a bug"
+
+[branch__current__pull_request__feature_addition]:
+  PULL_REQUEST_TEMPLATE/feature_addition.md
+  "Template for Pull Request that adds a feature"
+
+[branch__current__readme]:
+  README.md
+  "Highlights various resources this repository contains"
 
 
-[jsdoc__block_tags]: https://jsdoc.app/#block-tags
+[branch__current__license]:
+  /LICENSE
+  "&#x2696; Full length version of AGPL-3.0 License"
+
+
+[branch__current__security]:
+  /SECURITY.md
+  "Best practices for reporting issues of a security related nature"
 
 
 [badge__issues]: https://img.shields.io/github/issues/javascript-utilities/.github.svg
+
 [badge__contributors]: https://img.shields.io/github/forks/javascript-utilities/.github.svg?color=005571&label=Contributors
 
-
 [badge__support]: https://img.shields.io/badge/&hearts;-Support-lightgray.svg?labelColor=success&color=gray
+
+
+[atom__contributing]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
+
+[mustache_js]: https://github.com/janl/mustache.js
+
+[jekyll_admin]: https://github.com/S0AndS0/Jekyll_Admin

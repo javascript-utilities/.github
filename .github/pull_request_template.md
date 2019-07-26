@@ -1,6 +1,6 @@
 ---
 name: Pull Request
-about: General format of Pull Request commits
+about: Template for general Pull Request
 title: ''
 labels: ''
 assignees: ''
