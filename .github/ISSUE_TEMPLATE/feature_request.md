@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: [FEATURE] volume control for `More.cowBell()` please
+title: ''
 labels: ''
 assignees: ''
 ---
